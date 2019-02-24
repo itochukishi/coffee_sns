@@ -34,16 +34,24 @@
 
   <section class="works">
   <h2 class="heading">Let's Share</h2>
-  <div class="buttons">
-  <form class="post-form">
-   <a class="button" href="#about">投稿する</a>
-  <input type=”text＂ name="name", placeholder="NAME">
-   <textarea name="message" placeholder="MESSAGE"></textarea>
-    <input type="submit" value="SEND">
-  </form>
-  <a class="button" href="#about">画像</a>
-  <a class="button" href="#about">動画</a>
-  </div>
+   <% if user_signed_in? %>
+     <div class="buttons">
+      <form class="post-form">
+      <%= link_to '投稿一覧へ', '/', class:'sample' %>
+      <a class="button" href="#about">投稿する</a>
+      <input type=”text＂ name="name", placeholder="NAME">
+      <textarea name="message" placeholder="MESSAGE"></textarea>
+      <input type="submit" value="SEND">
+    </form>
+     <a class="button" href="#about">画像</a>
+     <a class="button" href="#about">動画</a>
+    </div>
+  <% else %>
+　　　<div class="grid-6">
+      <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+      <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+    </div>
+  <% end %>
   </section>
 
 <section class="works_2">
