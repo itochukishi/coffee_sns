@@ -1,0 +1,97 @@
+// Place all the styles related to the coffee_sns controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    background: url(images/coffee.png) fixed;
+    background-size: cover;
+}
+
+
+
+.header {
+  padding: 10px 30px 80px;
+  height: 50vh;
+  background-color: rgba(0, 50, 0, 0.5);
+}
+
+.site-title {
+    margin: 5px;
+    font-size: 4rem;
+}
+
+.site-description {
+    margin-bottom: 5px;
+
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    padding: 2px;
+    margin: 1px;
+    border-radius: 100px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button-orange {
+    background-color: #f1b400;
+}
+
+
+.about {
+  height: 50vh;
+  padding: 2px 3px;
+background-color: #fff;
+  color: #333;
+}
+
+.about-text {
+    width: 600px;
+    margin: 10px auto;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.heading {
+    display: inline-block;
+    margin: 3px 0 15px;
+    padding-bottom: 1px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    border-bottom: double 4px #000;
+}
+
+.works {
+  display: inline-block;
+  height: 50vh;
+  margin: 3px auto;
+  background-color: #383634;
+}
+
+.works_2 {
+  display: inline-block;
+  height: 50vh;
+  margin: 3px 0 15px;
+  background-color: #383634;
+}
+
+.contact {
+  height: 50vh;
+  background-color: rgba(25, 25, 120, 0.9);
+}
