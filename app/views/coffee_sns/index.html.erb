@@ -6,6 +6,8 @@
  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
+
  <header class="header">
   <h1 class="site-title">Coffee World</h1>
   <p class="site-description">Let's Share your coffee life</p>
@@ -19,28 +21,37 @@
   </div>
   </header>
 
-  <section class="about" id="about">
 
+  <section class="about" id="about">
     <h2 class="heading">The Latest News </h2>
   <p class="about-text">
     ・生産国情報
     ・輸出入情報
     ・消費国情報
     </p>
-
   </section>
+
 
   <section class="works">
   <h2 class="heading">Let's Share</h2>
-  <a class="button" href="#about">投稿する</a>
+  <div class="buttons">
+  <form class="post-form">
+   <a class="button" href="#about">投稿する</a>
+  <input type=”text＂ name="name", placeholder="NAME">
+   <textarea name="message" placeholder="MESSAGE"></textarea>
+    <input type="submit" value="SEND">
+  </form>
   <a class="button" href="#about">画像</a>
   <a class="button" href="#about">動画</a>
+  </div>
   </section>
 
 <section class="works_2">
   <h2 class="heading">最新の投稿</h2>
+  <div class="buttons">
   <a class="button" href="#about">ジャンルを選ぶ</a>
-  </section>
+  </div>
+</section>
 
   <section class="contact" id="contact">
  <h2 class="heading">Profile</h2>
