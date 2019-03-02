@@ -10,15 +10,13 @@ body {
     color: #fff;
     text-align: center;
     font-size: 0.8rem;
-    background: url(images/coffee.png) fixed;
+    background: url(coffee.png) fixed;
     background-size: cover;
 }
 
-
-
 .header {
   padding: 10px 30px 80px;
-  height: 50vh;
+  height: 10vh;
   background-color: rgba(0, 50, 0, 0.5);
 }
 
@@ -53,11 +51,49 @@ body {
     background-color: #f1b400;
 }
 
+.post-form {
+    /*width: 50vw;*/
+    margin: 50px 0;
+}
+
+.post-form input[type=text], .contact-form textarea {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.post-form textarea {
+  height: 50px;
+}
+
+.post-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
 
 .about {
   height: 50vh;
   padding: 2px 3px;
-background-color: #fff;
+  background-color: #fff;
   color: #333;
 }
 
@@ -69,7 +105,7 @@ background-color: #fff;
 }
 
 .heading {
-    display: inline-block;
+   display: inline-block;
     margin: 3px 0 15px;
     padding-bottom: 1px;
     letter-spacing: 2px;
@@ -77,15 +113,19 @@ background-color: #fff;
     border-bottom: double 4px #000;
 }
 
+
+
 .works {
   display: inline-block;
+  width: 49.5vw;
   height: 50vh;
-  margin: 3px auto;
+  margin: 3px 0;
   background-color: #383634;
 }
 
 .works_2 {
   display: inline-block;
+  width: 49.5vw;
   height: 50vh;
   margin: 3px 0 15px;
   background-color: #383634;
@@ -95,3 +135,14 @@ background-color: #fff;
   height: 50vh;
   background-color: rgba(25, 25, 120, 0.9);
 }
+
+.about_2 {
+  display: inline-block;
+  height: 10vh;
+  padding: 2px 3px;
+  background-color: #fff;
+  font-size: 3rem;
+  color: #f00;
+}
+
+

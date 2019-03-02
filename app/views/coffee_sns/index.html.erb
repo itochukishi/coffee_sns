@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
 <head>
   <meta charset="UTF-8">
   <title></title>
@@ -31,27 +30,25 @@
     </p>
   </section>
 
+  <% if user_signed_in? %>
 
   <section class="works">
   <h2 class="heading">Let's Share</h2>
-   <% if user_signed_in? %>
+
      <div class="buttons">
-      <form class="post-form">
       <%= link_to '投稿一覧へ', '/', class:'sample' %>
       <a class="button" href="#about">投稿する</a>
-      <input type=”text＂ name="name", placeholder="NAME">
-      <textarea name="message" placeholder="MESSAGE"></textarea>
-      <input type="submit" value="SEND">
-    </form>
-     <a class="button" href="#about">画像</a>
-     <a class="button" href="#about">動画</a>
+      <a class="button" href="#about">画像</a>
+      <a class="button" href="#about">動画</a>
     </div>
-  <% else %>
-　　　<div class="grid-6">
-      <%= link_to "ログイン", new_user_session_path, class: 'post' %>
-      <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
-    </div>
-  <% end %>
+
+  <form class="post-form">
+<!--     <input type="text" name="name" placeholder="NAME">
+    <textarea name="message" placeholder="MESSAGE"></textarea>
+    <input type="submit" value="SEND"> -->
+    <div style="height: 200px; width: 100px; color: green">
+  </form>
+
   </section>
 
 <section class="works_2">
@@ -65,7 +62,16 @@
  <h2 class="heading">Profile</h2>
   <a class="button" href="#about">友達になる</a>
   <a class="button" href="#about">コミュニティを探す</a>
+
   </section>
-<body>
-</body>
-</html>
+
+<div class="about_2">
+      <%= link_to "ログアウト",  destroy_user_session_path , method: :delete %>
+
+
+<% else %>
+　　　<div class="about_2">
+      <%= link_to "ログイン", new_user_session_path, class: 'post' %>
+      <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+    </div>
+  <% end %>
