@@ -52,13 +52,13 @@ body {
 }
 
 .post-form {
-    /*width: 50vw;*/
+    width: 50vw;
     margin: 50px 0;
 }
 
 .post-form input[type=text], .contact-form textarea {
   display: block;
-  margin: 0;
+  margin: auto;
   margin-bottom: 10px;
   padding: 15px;
   outline: none;
@@ -75,7 +75,7 @@ body {
 .post-form input[type=submit] {
   display: block;
   width: 200px;
-  margin: 40px auto 0;
+  margin: auto ;
   padding: 15px;
   border-radius: 5px;
   background-color: transparent;
@@ -121,6 +121,7 @@ body {
   height: 50vh;
   margin: 3px 0;
   background-color: #383634;
+  vertical-align: top;
 }
 
 .works_2 {
@@ -129,6 +130,7 @@ body {
   height: 50vh;
   margin: 3px 0 15px;
   background-color: #383634;
+  vertical-align: top;
 }
 
 .contact {
