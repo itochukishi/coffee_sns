@@ -23,11 +23,14 @@
 
   <section class="about" id="about">
     <h2 class="heading">The Latest News </h2>
-  <p class="about-text">
+   <p class="about-text">
     ・生産国情報
     ・輸出入情報
     ・消費国情報
     </p>
+    <div>
+      "ここにスクレイピングでコーヒーに関連するニュースを引張る"
+    </div>
   </section>
 
   <% if user_signed_in? %>
@@ -55,12 +58,21 @@
   <div class="buttons">
   <a class="button" href="#about">ジャンルを選ぶ</a>
   </div>
+  <div>
+   "ここに各ユーザーの投稿を時系列順に表示する"
+  </div>
+  <p> <%= @genres %></p>
 </section>
 
   <section class="contact" id="contact">
  <h2 class="heading">Profile</h2>
   <a class="button" href="#about">友達になる</a>
   <a class="button" href="#about">コミュニティを探す</a>
+  <a class="button" href="#about">編集する</a>
+
+  <div>
+  "自分のプロフィールを表示"
+  </div>
 
   </section>
 

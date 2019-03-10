@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_24_131225) do
+ActiveRecord::Schema.define(version: 2019_03_10_103508) do
+
+  create_table "coffee_feeds", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "image"
+    t.text "message"
+    t.text "id_user"
+    t.text "id_genre"
+    t.text "id_community"
+    t.text "language"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "country"
+    t.text "supply_chain"
+    t.text "image"
+    t.text "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
