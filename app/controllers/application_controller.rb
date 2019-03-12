@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
 
 def index_1
-  @coffee_feeds  = Coffee_feeds.all
+  @coffee_feeds  = Coffee_feed.all
 end
 
 def genre
-  @genres  = Genres.all
+  @genres  = Genre.all
 end
 
 end

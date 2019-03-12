@@ -61,7 +61,10 @@
   <div>
    "ここに各ユーザーの投稿を時系列順に表示する"
   </div>
-  <p> <%= @genres %></p>
+    <div class="contents row">
+      <% @genres.each do |genre| %>
+       <p> <%= @genre.text %></p>
+    </div>
 </section>
 
   <section class="contact" id="contact">
