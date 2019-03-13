@@ -10,7 +10,7 @@ body {
     color: #fff;
     text-align: center;
     font-size: 0.8rem;
-    background: url(/assets/coffee.png) fixed;
+    background: url(coffee.png) fixed;
     background-size: cover;
 }
 
