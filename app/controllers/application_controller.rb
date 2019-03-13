@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 
 def index_1
+  binding.pry
   @coffee_feeds  = Coffee_feed.all
 end
 

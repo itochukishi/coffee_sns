@@ -63,7 +63,10 @@
   </div>
     <div class="contents row">
       <% @genres.each do |genre| %>
-       <p> <%= @genre.text %></p>
+       <p> <%= genre.country %></p>
+       <p> <%= genre.supply_chain %></p>
+       <p> <%= genre.message %></p>
+      <% end %>
     </div>
 </section>
 
