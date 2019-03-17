@@ -61,10 +61,19 @@
   <div>
    "ここに各ユーザーの投稿を時系列順に表示する"
   </div>
-    <div class="contents row">
+    <div class="contents_country">
       <% @genres.each do |genre| %>
        <p> <%= genre.country %></p>
+      <% end %>
+    </div>
+        <div class="contents_supplychain">
+      <% @genres.each do |genre| %>
        <p> <%= genre.supply_chain %></p>
+      <% end %>
+    </div>
+     </div>
+        <div class="contents_message">
+      <% @genres.each do |genre| %>
        <p> <%= genre.message %></p>
       <% end %>
     </div>

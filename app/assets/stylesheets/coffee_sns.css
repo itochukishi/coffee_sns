@@ -133,6 +133,28 @@ body {
   vertical-align: top;
 }
 
+.contents_country{
+  display: inline-block;
+  width: 10vw;
+  margin: 3px 0 15px;
+  background-color: #383634;
+}
+
+.contents_supplychain{
+  display: inline-block;
+  width: 10vw;
+  margin: 3px 0 15px;
+  background-color: #383634;
+}
+
+.contents_message{
+  display: inline-block;
+  width: 10vw;
+  margin: 3px 0 15px;
+  background-color: #383634;
+}
+
+
 .contact {
   height: 50vh;
   background-color: rgba(25, 25, 120, 0.9);
