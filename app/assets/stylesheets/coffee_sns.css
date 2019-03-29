@@ -16,7 +16,7 @@ body {
 
 .header {
   padding: 10px 30px 80px;
-  height: 15vh;
+  /*height: 15vh;*/
   background-color: rgba(0, 50, 0, 0.5);
 }
 
