@@ -24,17 +24,23 @@
   <section class="about" id="about">
     <h2 class="heading">The Latest News </h2>
    <p class="about-text">
-    ・生産国情報
-    ・輸出入情報
-    ・消費国情報
     </p>
-    <div>
-      "ここにスクレイピングでコーヒーに関連するニュースを引張る"
-    </div>
+    <a href="https://dailycoffeenews.com/">
+      Daily coffee news
+    </a><br>
+    <a href="https://slolab.net/cafe/">
+      コーヒーブログ
+    </a><br>
+    <a href="https://www.theice.com/products/15/Coffee-C-Futures">
+      コーヒー先物市場
+    </a><br>
+
+
   </section>
 
   <% if user_signed_in? %>
 
+<div class="works_parents">
   <section class="works">
   <h2 class="heading">Let's Share</h2>
 
@@ -45,39 +51,38 @@
       <a class="button" href="#about">動画</a>
     </div>
 
-  <form class="post-form">
-    <input type="text" name="name" placeholder="NAME">
+ <div class="contents row">
+  <%= form_tag('/coffee_sns', method: :post) do %>
+    <input type="text" name="language" placeholder="Language">
     <textarea name="message" placeholder="MESSAGE"></textarea>
     <input type="submit" value="SEND">
-  </form>
+  <% end %>
+</div>
 
   </section>
 
 <section class="works_2">
   <h2 class="heading">最新の投稿</h2>
-  <div class="buttons">
-  <a class="button" href="#about">ジャンルを選ぶ</a>
-  </div>
-  <div>
-   "ここに各ユーザーの投稿を時系列順に表示する"
-  </div>
-    <div class="contents_country">
-      <% @genres.each do |genre| %>
-       <p> <%= genre.country %></p>
-      <% end %>
+    <div class="buttons">
+      <a class="button" href="#about">ジャンルを選ぶ</a>
     </div>
-        <div class="contents_supplychain">
-      <% @genres.each do |genre| %>
-       <p> <%= genre.supply_chain %></p>
-      <% end %>
-    </div>
-     </div>
+<!--     <div>
+      "ここに各ユーザーの投稿を時系列順に表示する"
+    </div> -->
+
+      <% @coffee_feeds.each do |coffee_feeds| %>
+      <div class="comment_box">
         <div class="contents_message">
-      <% @genres.each do |genre| %>
-       <p> <%= genre.message %></p>
+          <p> <%= coffee_feeds.message %></p>
+        </div>
+        <div class="contents_language">
+          <p> <%= coffee_feeds.language %></p>
+        </div>
+      </div>
       <% end %>
-    </div>
 </section>
+</div>
+
 
   <section class="contact" id="contact">
  <h2 class="heading">Profile</h2>
@@ -85,8 +90,11 @@
   <a class="button" href="#about">コミュニティを探す</a>
   <a class="button" href="#about">編集する</a>
 
-  <div>
-  "自分のプロフィールを表示"
+  <div class="name">
+   <%= current_user.name %>
+  </div>
+  <%= image_tag(current_user.image, :size => "160x160") %>
+
   </div>
 
   </section>

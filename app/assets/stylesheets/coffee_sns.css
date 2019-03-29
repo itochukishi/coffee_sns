@@ -30,6 +30,20 @@ body {
 
 }
 
+
+.name {
+  font-size: 2rem;
+  margin: 10px auto;
+  width: 50%;
+  color: #000000;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;/*上下中央*/
+  border-radius: 25px 25px 25px 25px;/*左側の角を丸く*/
+}
+
+
 .button {
     display: inline-block;
     width: 130px;
@@ -91,7 +105,6 @@ body {
 
 
 .about {
-  height: 50vh;
   padding: 2px 3px;
   background-color: #fff;
   color: #333;
@@ -115,22 +128,35 @@ body {
 
 
 
-.works {
-  display: inline-block;
-  width: 49.5vw;
-  height: 50vh;
+.works_parents {
+  display: flex;
   margin: 3px 0;
+  justify-content: space-between;
+/*  background-color: #383634;  vertical-align: top;*/
+}
+
+
+.works {
+  /*display: inline-block;*/
+  width: 49.5vw;
+ /* height: 100%;
+*/  margin: 3px 0 15px;
   background-color: #383634;
   vertical-align: top;
 }
 
 .works_2 {
-  display: inline-block;
+/*  display: inline-block;*/
   width: 49.5vw;
-  height: 50vh;
+/*  height: 50vh;*/
   margin: 3px 0 15px;
   background-color: #383634;
   vertical-align: top;
+}
+
+.comment_box{
+  display:flex;
+  justify-content: space-around;
 }
 
 .contents_country{
@@ -149,9 +175,25 @@ body {
 
 .contents_message{
   display: inline-block;
-  width: 10vw;
+  word-wrap: break-word;
+  width: 70%;
   margin: 3px 0 15px;
-  background-color: #383634;
+  background-color: rgba(255, 230, 0, 0.5);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+/*.contents_message p{
+  width: 200px;
+}
+*/
+.contents_language{
+  display: inline-block;
+  width: 25%;
+  margin: 3px 0 15px;
+  background-color: rgba(255, 230, 0, 0.5);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
 
